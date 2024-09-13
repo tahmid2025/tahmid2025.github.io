@@ -1,0 +1,141 @@
+body{
+    margin: 0px;
+}
+
+body>header{
+    display: flex; /* Aligns children (h1 and div) in a row */
+    justify-content: center; /* Center both elements horizontally */
+    align-items: center; /* Align them vertically in case of different heights */
+    gap: 10vw ; /* Adds space between the two elements */
+    
+}
+
+/* Custom scroll bar styling for webkit browsers */
+body > main::-webkit-scrollbar {
+    width: 15px;
+}
+
+body > main::-webkit-scrollbar-thumb {
+    background: #a81515;
+}
+
+h1{
+    margin: 0px;
+    padding-bottom: 0px;
+
+}
+
+#FootballImage{
+    background-image: url('football.jpeg'); /* Sets the background image */
+    background-size: 30vw; /* Adjusts the image to cover the entire header */
+    background-position:55% 100%; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    text-align: center; /* Centers the text */
+    padding-top:10vh ; /* Adjusts padding as needed */
+    width: 50vw; /* Set width */
+    
+    
+   
+}
+
+#MainHeader{
+    background-image: url('Logo.jpeg'); /* Sets the background image */
+    background-size: 30vw; /* Adjusts the image to cover the entire header */
+    background-position:45% 100%; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    text-align: center; /* Centers the text */
+    padding-top:10vh ; /* Adjusts padding as needed */
+    width: 50vw; /* Set width */
+
+}
+
+/* Navigation Bar */
+#MainNav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-left:27vw;
+    margin-right: 27vw;
+    border-top:1vw solid #ccc ;
+    border-left:1vw solid #ccc ;
+    border-right:1vw solid #ccc ;
+    border-bottom: 1vw solid #ccc; 
+}
+
+/* List Item Style */
+#MainNav > li {
+    margin: 0;
+    padding: 0 1vw;
+    position: relative;
+}
+
+
+/* this adds the vertical line between list items excpe the last one */
+#MainNav > li:not(:last-child)::after {
+    content: "|"; 
+    position: absolute;
+    right: 0vw;
+    top: 0vh;
+    bottom:0vh;
+    color: #ccc; 
+}
+
+/* Link Style */
+.list {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+    font-weight: bold;
+    padding: 1vw 0;
+}
+
+/* Link Hover Style */
+.list:hover {
+    background-color: #2cc975; 
+    padding: 0.5vw;
+}
+
+
+Body>main{
+    margin-left: 27vw;
+    margin-right: 25vw;
+
+}
+
+h2{
+    margin:0px;
+    font-family: "Fredoka One";
+    font-size: 5vh;
+   
+}
+
+footer{
+    margin: 0px;
+    background-color: aquamarine;
+}
+
+h3{
+    margin: 0px;
+    padding-bottom: 9vh;
+    text-align: center;    
+}
+
+form{
+    text-align: center;
+    padding-bottom: 9vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 300px; /* Set a width for the form */
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
